@@ -1,0 +1,7 @@
+[requires]
+qt/6.4.2
+
+[generators]
+cmake
+cmake_paths
+cmake_find_package
