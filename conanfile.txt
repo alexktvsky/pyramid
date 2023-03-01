@@ -1,6 +1,9 @@
 [requires]
 qt/6.4.2
 
+[options]
+qt:shared=True
+
 [generators]
 cmake
 cmake_paths
