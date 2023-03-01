@@ -49,11 +49,11 @@ void MainWindow::onActionOpenImage(void)
         return;
     }
 
-    QPixmap orig_pixmap(fname);
-    m_label->setPixmap(orig_pixmap);
-    m_label->resize(orig_pixmap.size());
+    QPixmap pixmap(fname);
+    m_label->setPixmap(pixmap);
+    m_label->resize(pixmap.size());
 
-    initializeImagePyramid(orig_pixmap);
+    initializeImagePyramid(pixmap);
     initializeComboBox();
 }
 
