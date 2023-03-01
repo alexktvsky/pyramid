@@ -1,8 +1,9 @@
 #include "main_window.h"
 
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
-
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+{
     m_label = new QLabel(this);
     m_label->setAlignment(Qt::AlignCenter);
 
@@ -25,7 +26,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     );
 }
 
-void MainWindow::onActionOpenImage(void) {
+void MainWindow::onActionOpenImage(void)
+{
     QString fname = QFileDialog::getOpenFileName(
         this,
         tr("Open image..."),
